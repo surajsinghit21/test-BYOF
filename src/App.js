@@ -5,7 +5,7 @@ function App() {
 
   useEffect(() => {
     (async function () {
-      const { text } = await( await fetch(`api/HttpTrigger2`)).json();
+      const { text } = await( await fetch(`api/HttpTrigger2?code=mRyVsnN67FfoDDOZ1nwlIUENTWHoWjQNJoX0Vv1hYvRMAzFuAt3DrQ==&clientId=default`)).json();
       setData(text);
     })();
   });
